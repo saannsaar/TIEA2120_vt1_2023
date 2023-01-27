@@ -1,0 +1,165 @@
+
+div {
+    display: flex;
+    flex-direction: row;    
+}
+
+
+div > div  {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ border-collapse: collapse;
+ border: 1px solid black;
+ margin: 9px;
+ height: fit-content;
+ width: fit-content;
+}
+
+#vt1 > div > div >div >form:nth-child(1) {
+  
+    order: 2;
+    position: relative;
+    overflow: hidden;
+
+} 
+
+#vt1 > div > div >div >form:nth-child(2) > fieldset {
+    font-weight: bold;
+}
+#vt1 > div > div >div >form:nth-child(2) > fieldset > legend {
+    font-weight: normal;
+}
+
+
+legend {
+    font-weight: bold;
+}
+
+caption {
+    align-self: left;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+div > table {
+    border-collapse: collapse;
+    border-style: dotted;
+    empty-cells: show;
+    border-top: 1px solid black;
+}
+
+div > div > div {
+    border-style: none;
+    width: fit-content;
+}
+
+
+div > div  > form {
+    border-style: none;
+}
+
+
+fieldset {
+    border: none;
+}
+div > div > div  > form:nth-child(2)  {
+    width: 100%;
+}
+div > div > div  > form > fieldset > fieldset:nth-child(4) {
+    display: block;
+    margin: 0 10px;
+    float: left;
+    width: 40%;
+    
+}
+div > div > div  > form > fieldset > fieldset:nth-child(3) {
+    display: block;
+    width: 40%;
+    margin: 0 10px;
+    float: right;
+    margin-bottom: 40px;
+}
+
+div > div > div  > form > fieldset > fieldset:nth-child(5){
+    width: 100%;
+}
+
+button {
+    width: fit-content;
+}
+
+
+input {
+    width : fit-content;
+}
+
+
+ul {
+    padding: 15px;
+}
+
+
+fieldset {
+   
+    display: list-item;
+}
+
+div > table > tr {
+    height: 10px;
+}
+tr {
+    border-collapse: collapse;
+    border-style: dotted;
+    border-spacing: 0;
+    padding: 0;
+    height: 10px;
+    
+}
+
+
+
+th {
+    border-collapse: collapse;
+    border-style: dotted;
+    border-right: 1px solid black;
+    text-align: left;
+    padding: 0;
+}
+
+
+td {
+    border-style: dotted;
+    
+}
+
+fieldset {
+    padding-left: 0;
+    padding-right: 0;
+
+    padding-bottom: 10px;
+}
+
+label {
+    display:flex;
+    justify-content: space-between;
+    align-items:  left;
+    padding-bottom: 20px;
+}
+
+
+
+tbody > tr >td:nth-child(4) > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+tbody > tr:hover td:nth-child(4) > ul> li:last-child {
+     color: red;
+     font-weight: bold;
+
+}
+
+tbody > tr >td:nth-child(4) > ul> li:last-child {
+    color: white;
+}
