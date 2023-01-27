@@ -68,14 +68,20 @@ function jarjestaSarjat(sarjat) {
   */
 function lisaaSarja(sarjat, nimi, kesto, alkuaika, loppuaika) {
 
-  if ( !nimi ) {
-    return false;
-  }
-  
+  // Tsekataan onko nimi ja kesto täytetty tai onko nimi sama kuin 
+  // sarjat listassa  
   if ( !kesto ) {
     return false;
   }
+
+  for (let s of sarjat) {
+    if (nimi == s.nimi || !nimi) {
+      console.log("EI SAMANNIMISIÄ TAI TYHJÄÄ");
+      return false;
+    }
+  }
   
+  //Luodaan id joka ei ole sama mitä muilla sarjoilla on
   function id(sarjat){
   
     let maxValue = sarjat[0].id;
@@ -453,6 +459,9 @@ function jarjestaJoukkueet(data, mainsort="nimi", sortorder=[] ) {
 function sortByThenBy(array, keys) {
   return array.sort(function (a,b) {
     let r;
+    // Käydään sortorderin alkiot läpi järjestyksessä ja tsektaan
+    // Onko sarja, jos ei onko string vai number ja mikä order on ja sen mukaan
+    //sortataan
     keys.some(function (k) {
       if (k.key == "sarja" && k.order == 1) {
         console.log("SARJASORT1");
