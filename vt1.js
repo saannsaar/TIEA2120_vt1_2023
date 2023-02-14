@@ -653,7 +653,6 @@ function laskePisteet(joukkue) {
     }
   }
 
-
   for (let k of jarjleimaukset) {
     koodit.push(k.rasti.koodi);
   }
